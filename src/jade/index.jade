@@ -1,0 +1,83 @@
+doctype html
+html(lang='ru', class="no-js")
+  head
+    meta(charset='utf-8')
+    
+    title Blog
+    meta(name='description', content='')
+    
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(property='og:image', content='path/to/image.jpg')
+    
+    link(href="css/style.css", rel="stylesheet")
+    link(href="css/main.css", rel="stylesheet")
+    link(href="css/fonts.css", rel="stylesheet")
+  body
+    header
+      .main-head
+        .container
+          .row
+            .col-md-2
+              .header-logo
+                img(src="img/photo.jpg")
+            .col-md-7
+            .col-md-3
+              .header-search
+                input(type="search")
+                i.fa.fa-search
+      .main-menu
+          .container
+            .row
+              .col-md-8
+                .menu
+                  ul
+                    li
+                      a(href="#") Главная
+                    li
+                      a(href="#") Сайт
+                    li
+                      a(href="#") Предложение
+                    li
+                      a(href="#") Контакты
+              .col-md-4
+                .header-social
+                  a(href="http://vk.com/" class="icon-button vk")
+                    span
+                    i.fa.fa-vk
+                  a(href="http://facebook.com/" class="icon-button facebook")
+                    span
+                    i.fa.fa-facebook
+                  a(href="http://twitter.com/" class="icon-button twitter")
+                    span
+                    i.fa.fa-linkedin
+                  a(href="https://www.linkedin.com/" class="icon-button linkedin")
+                    span
+                    i.fa.fa-twitter
+                  a(href="http://github.com/" class="icon-button github")
+                    span
+                    i.fa.fa-github
+    .container
+      .row
+        .col-md-8
+          .item-article
+            .article-data
+              i.fa.fa-calendar
+              span 21.12.2016
+            .article-title
+              h2 Название моей первой новости.
+            .article-wrap-text-img.clearfix
+              .article-img
+                img(src="../img/article-img.png", alt="")
+              .article-text
+                p Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Домах взобравшись путь заманивший, рукопись встретил все пустился своих вершину коварный выйти напоивший однажды диких осталось дал, буквоград букв грамматики!
+            .article-control-panel
+              .article-tag
+                i.fa.fa-folder-open
+                span JavaScript
+              .article-comm-views
+                span 32
+        .col-md-4
+
+script(src="js/scripts.js")
+script(src="js/common.js")
