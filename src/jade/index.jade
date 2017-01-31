@@ -1,3 +1,35 @@
+mixin itemArticle ()
+  .item-article
+    .article-data
+      i.fa.fa-calendar
+      span 21.12.2016
+    .article-title
+      a(href="#")
+        h2 Название моей первой новости.
+    .article-wrap-text-img.clearfix
+      .article-img
+        a(href="#")
+          img(src="../img/js.jpg", alt="")
+      .article-text
+        p Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Домах взобравшись путь заманивший, рукопись встретил все пустился своих вершину коварный выйти напоивший однажды диких осталось дал, буквоград букв грамматики!
+    .article-control-panel.clearfix
+      .article-tag
+        i.fa.fa-folder-open
+        span JavaScript
+      .article-comm-views.clearfix
+        .article-user
+          i.fa.fa-user
+          span Vitaliy
+        .article-comments
+          i.fa.fa-comment-o
+          span 111
+        .article-views
+          i.fa.fa-eye
+          span 32
+      .article-button-read
+        a.button(href="#")
+          Читать
+
 doctype html
 html(lang='ru', class="no-js")
   head
@@ -60,24 +92,49 @@ html(lang='ru', class="no-js")
     .container
       .row
         .col-md-8
-          .item-article
-            .article-data
-              i.fa.fa-calendar
-              span 21.12.2016
-            .article-title
-              h2 Название моей первой новости.
-            .article-wrap-text-img.clearfix
-              .article-img
-                img(src="../img/article-img.png", alt="")
-              .article-text
-                p Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Домах взобравшись путь заманивший, рукопись встретил все пустился своих вершину коварный выйти напоивший однажды диких осталось дал, буквоград букв грамматики!
-            .article-control-panel
-              .article-tag
-                i.fa.fa-folder-open
-                span JavaScript
-              .article-comm-views
-                span 32
+          +itemArticle
+          +itemArticle
+          +itemArticle
+          +itemArticle
         .col-md-4
+          .sidebar-menu
+            ul
+              li
+                a(href="#")
+                  i.fa.fa-html5
+                  | Html
+              li
+                a(href="#")
+                  i.fa.fa-css3
+                  | Css
+              li
+                a(href="#")
+                  i.fa.fa-code
+                  | JavaScript
+              li
+                a(href="#")
+                  i.fa.fa-wordpress
+                  | WordPress
+              li
+                a(href="#")
+                  i.fa.fa-cogs
+                  | Инструменты
+              li
+                a(href="#")
+                  i.fa.fa-code
+                  | jQuery плагины
+              li
+                a(href="#")
+                  i.fa.fa-picture-o
+                  | Изображения
+              li
+                a(href="#")
+                  i.fa.fa-font
+                  | Шрифты
+          .sidebar-advertising
+            .img-center
+              img(src="../img/adv-img.png", alt="")
+          .sidebar-anohter-block
 
 script(src="js/scripts.js")
 script(src="js/common.js")

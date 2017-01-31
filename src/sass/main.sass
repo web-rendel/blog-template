@@ -73,7 +73,7 @@ header
 	.main-menu
 		width: 100%
 		height: 50px
-		background-color: #4a78af
+		background-color: #A4C3DA
 		margin-bottom: 40px
 		.menu
 			ul
@@ -86,12 +86,12 @@ header
 					position: relative
 					transition: all .3s ease
 					&:hover
-						background-color: #A4C3DA
+						background-color: #59B1F5
 						a
-							color: #3C5778 
+							color: #fff
 					a
 						transition: all .3s ease
-						color: #fff
+						color: #696969
 						font-family: "RobotoCondensed-Regular", sans-serif
 						font-size: 18px
 						&:hover
@@ -119,26 +119,40 @@ header
 .item-article
 	background-color: #fff
 	padding: 10px 20px 20px 20px
+	+box-sh-block
+	margin-bottom: 30px
 	.article-data
 		i
-			color: $gary-color
+			color: $additional-color
 			padding-right: 15px
 		span
 			font-family: "Roboto-Italic", sans-serif
 			color: #343434
 	.article-title
+		a
+			&:hover
+				text-decoration: none
 		h2
 			font-family: "Roboto-Bold", sans-serif
 			font-size: 22px
 			color: #696969
+			transition: all .3s ease
+			&:hover
+				color: $additional-color
 	.article-wrap-text-img
 		.article-img
 			width: 20%
 			height: 100px
-			border: 1px solid $gary-color
+			border: 1px solid $additional-color
 			float: left
+			overflow: hidden
 			img
 				max-width: 100%
+				height: 100%
+				object-fit: cover
+				transition: all .3s ease
+				&:hover
+					transform: scale(1.1)
 		.article-text
 			float: left
 			width: 80%
@@ -149,17 +163,89 @@ header
 	.article-control-panel
 		margin-top: 20px
 		.article-tag
+			float: left
+			margin-top: 4px
 			i
-				color: $gary-color
+				color: $additional-color
 				padding-right: 10px
 			span
 				font-family: "Roboto-Italic", sans-serif
 				color: #343434
 		.article-comm-views
 			width: 222px
-			height: 33px
-			border: 1px solid $gary-color
+			height: 35px
+			border: 1px solid $additional-color
+			float: left
+			padding: 3px 3px 3px 20px
+			margin-left: 260px
+			div
+				float: left
+				margin-right: 15px
+				i
+					color: $additional-color
+					padding-right: 5px
+				span
+					font-family: "Roboto-Italic", sans-serif
+					color: #343434
+		.article-button-read
+			float: right
+			.button
+				width: 108px
+				display: block
+				height: 35px
+				color: #fff
+				text-align: center
+				cursor: pointer
+				background-color: $additional-color
+				cursor: pointer
+				line-height: 35px
+				border-radius: 2px
+				transition: all .3s ease
+				&:hover
+					text-decoration: none
+					background-color: darken($additional-color, 20%)
 
+.sidebar-menu
+	background-color: #fff
+	+box-sh-block
+	padding: 30px 0
+	margin-bottom: 30px
+	ul
+		padding: 0
+		margin: 0
+		li
+			list-style: none
+			cursor: pointer
+			position: relative
+			i
+				color: $additional-color
+				padding-right: 10px
+			a
+				text-decoration: none
+				color: #696969
+				font-family: "RobotoCondensed-Regular", sans-serif
+				font-size: 20px
+				padding: 5px 25px
+				display: block
+				transition: .3s all ease
+				&:hover
+					background-color: #59B1F5
+					color: #fff
+.sidebar-advertising
+	background-color: #fff
+	+box-sh-block
+	padding: 30px 0
+	margin-bottom: 30px
+	.img-center
+		width: 100%
+		display: inline-block
+		text-align: center
+.sidebar-anohter-block
+	width: 100%
+	height: 250px
+	background-color: #fff
+	+box-sh-block
+	padding: 30px 0
 
 
 //ALWAYS END
